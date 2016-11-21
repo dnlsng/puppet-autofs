@@ -38,6 +38,9 @@
 # [*service_name*]
 #   Name of service
 #
+# [*service_restart*]
+#   Specify a restart command manually
+#
 # [*config_file*]
 #   Main configuration file path
 #
@@ -56,6 +59,7 @@ class autofs (
   $mount_entries     = $::autofs::params::mount_entries,
   $package_name      = $::autofs::params::package_name,
   $service_name      = $::autofs::params::service_name,
+  $service_restart   = $::autofs::params::service_restart,
   $config_file       = $::autofs::params::config_file,
   $config_file_owner = $::autofs::params::config_file_owner,
   $config_file_group = $::autofs::params::config_file_group,

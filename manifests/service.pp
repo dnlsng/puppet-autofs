@@ -10,5 +10,6 @@ class autofs::service {
     enable     => true,
     hasstatus  => true,
     hasrestart => true,
+    restart    => $autofs::service_restart,
   }
 }

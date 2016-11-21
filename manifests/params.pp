@@ -39,4 +39,6 @@ class autofs::params {
       fail("${::operatingsystem} not supported")
     }
   }
+
+  $service_restart = undef
 }
